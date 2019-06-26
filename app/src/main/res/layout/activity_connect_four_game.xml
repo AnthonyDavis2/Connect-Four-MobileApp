@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp" >
+
+    <!--Testing-->
+    <!--<android.support.v7.widget.Toolbar-->
+    <!--android:id="@+id/toolbar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="#131313"-->
+    <!--android:minHeight="?attr/actionBarSize">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:background="#00aaaaaa"-->
+    <!--android:layout_gravity="right"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<Button-->
+    <!--android:text="Delete"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:background="#000"-->
+    <!--android:textColor="#fff"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textSize="16dp" />-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--</android.support.v7.widget.Toolbar>-->
+
+    <!--end testing-->
+
+
+    <RelativeLayout
+        android:id="@+id/Player1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/maleAvatar"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:contentDescription="Male Avatar"
+            android:padding="4dp"
+            app:srcCompat="@drawable/male_avatar_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/maleAvatar"
+            android:text="Player 1"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:text="Help"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/newGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/help"
+
+            android:layout_centerInParent="true"
+            android:layout_marginStart="-85dp"
+            android:text="New Game"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/GameContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="175dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/C0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:onClick="buttonClick"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/AF"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/AE"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/AD"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/AC"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/AB"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/AA"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/C1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="buttonClick"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/BF"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/BE"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/BD"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/BC"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/BB"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/BA"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/C2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="buttonClick"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/CF"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/CE"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/CD"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/CC"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/CB"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/CA"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/C3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="buttonClick"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/DF"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/DE"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/DD"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/DC"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/DB"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/DA"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/C4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="buttonClick"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/EF"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/EE"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/ED"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/EC"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/EB"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/EA"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/C5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="buttonClick"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/FF"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/FE"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/FD"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/FC"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/FB"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/FA"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/C6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="buttonClick"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/GF"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/GE"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/GD"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/GC"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/GB"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+
+            <ImageButton
+                android:id="@+id/GA"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:clickable="false"
+                android:padding="0dp"
+                app:srcCompat="@drawable/game_bg" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/Player2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/maleAvatar2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:contentDescription="Male Avatar"
+            android:padding="4dp"
+            app:srcCompat="@drawable/male_avatar_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/maleAvatar2"
+            android:text="Player 2"
+            android:textSize="24sp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
