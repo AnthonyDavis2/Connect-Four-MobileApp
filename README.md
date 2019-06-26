@@ -6,7 +6,7 @@
 <h3>Rules:</h3>
 <ul>
   <li><p>To win, you must be the first player to get four of your colored checkers in a row either horizontally, vertically or diagonally.</p></li></ul>
-<br>
+
 <h3>Display View</h3>
 <ul>
   <li>
