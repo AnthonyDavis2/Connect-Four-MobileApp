@@ -12,9 +12,9 @@
 <ul>
   <li>
 <h4>Main Screen:</h4>
-    <img src="img/mainScreen.png" width="100" height="200">
+    <img src="img/mainScreen.png" width="200" height="400">
   </li>
   <li>
 <h4>Game Screen</h4>
-    <img src = "img/gameScreen.png" width="150" height="300">
+    <img src = "img/gameScreen.png" width="200" height="400">
   </li>
